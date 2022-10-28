@@ -205,9 +205,14 @@ color: black;
 }
 
 .nobulletlist {
-    list-style-type: none;
+    list-style-type: none; 
    }
    
+.li { 
+  margin: 26px; 
+  padding: 26px;
+}
+
 /* Style the footer */
 .footer {
     grid-area: footer;
