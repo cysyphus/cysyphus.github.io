@@ -1,18 +1,18 @@
+ /* Working version on cysyphus.github.io  */
 * {
     box-sizing: border-box;
+
   }
-  
-  body {
-    font-family: "Lato", sans-serif;
-  }
-  
+body {
+  font-family: "Lato", sans-serif;
+}
+
   /* Style the header  */
   .header {
     grid-area: header;
     background-color: #567895;
     padding: 30px;
     text-align: center;
-    font-family: "Lato", sans-serif;
     font-size: 20px;
     line-height: 160%;
     border-bottom: 5px solid lightgray;
@@ -38,7 +38,7 @@
   .column_2, 
   {
     padding: 10px;
-    /*height: 400px;  Should be removed. Only for demonstration */
+
   }
   
   /* Style the left column */
@@ -141,7 +141,7 @@
       float: none;
     }
   }
- 
+ /*still part of the buttons new, in-focus, resources styling */
   input[type=button], input[type=submit], input[type=reset] {
     background-color: whitesmoke;
     border: 1px;
@@ -150,47 +150,62 @@
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    width: 150px;
   }
+  /*new section -- search bar ! */
+
+    /* Style the search box form field */
+    .container {
+      border-radius: 5px;
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      
+      }
+      
+      form {
+      background: #fff;
+      border-radius: 5px;
+      width: 50%;
+      height: 55px;
+      display: flex;
+      border-radius: 5px;
+      }
+      
+      form input {
+      flex: 1;
+      border: none;
+      outline: none;
+     
+      }
+      
+      form button {
+      background: tomato; 
+      padding: 10px 30px;
+      border: 0;
+      border-radius: 0px 5px 5px 0px;
+      outline: none;
+      color: #fff;
+      letter-spacing: 1px;
+      font-size: 20px;
+      cursor: pointer;
+      }
+      
+      form .fa-magnifying-glass {
   
+      align-self: center;
+      padding: 10px 20px;
+      color: #777;
+      
+      }
+      
+    
+
 /* Style the search field */
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: center;
-  width: 50%;
-  background: #f1f1f1;
-  border-radius: 5px;
-}
-
-/* Style the submit button 
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: rgb(120, 134, 146);
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none; 
-  cursor: pointer;
-}
-*/
-
-form.example button:hover {
-  background: #0b7dda;
-}
-
-/* Clear floats */
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 
 .boxcontainer {
-    width: 10\0%;
+    width: 10\0;
     height: auto;
     background-color: #567895;
     
