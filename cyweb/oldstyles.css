@@ -4,13 +4,13 @@
 
   }
 body {
-  font-family: "Lato", sans-serif; 
+  font-family: "Lato", sans-serif;
 }
 
   /* Style the header  */
   .header {
     grid-area: header;
-    background-color: #3a3c3d;
+    background-color: #567895;
     padding: 30px;
     text-align: center;
     font-size: 20px;
@@ -83,15 +83,13 @@ body {
 
 * {
   box-sizing: border-box;
-
-}    
+}
 
 /* Style the header with a background color and some padding */
 .toplogo {
     overflow: hidden;
     background-color: white;
     padding: 20px 10px;
-    font-weight: 700;
   
   }
   
@@ -105,12 +103,15 @@ body {
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
-    border: 2px solid #8d8f91;
-    margin: 4px 2px 0px 4px; /*controls the "space" btw the buttons*/
-
    
   }
   
+  /* Style the logo link -- logo link is set to same value of line-height and font-size to prevent the header from increasing when the font gets bigger */
+  .toplogo a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    
+  }
   
   /* Change the background color on mouse-over */
   .toplogo a:hover {
@@ -139,41 +140,9 @@ body {
     .toplogo-right {
       float: none;
     }
-}
-/*new, in focus, resources buttons */
-.centerbuttons {
-   
-   display: flex; 
-   align-items: center; 
-   justify-content: center; 
-   font-weight: 700;
-}
-
-
-.btn {
-  border-radius: 7px;
-  text-align: center;
-  background-color: whitesmoke;
-  border: 3px solid #8d8f91;
-  color: black;
-  padding:  10px 32px; /*controls the "size" of the button*/
-  font-size: 16px;
-  font-family: "Lato", sans-serif;
-  text-decoration: none;
-  margin: 10px 2px 15px 10px; /*controls the "space" btw the buttons*/
-  cursor: pointer;
-  width: 150px; /*keeps the "boxes" the same size regardless of text*/
   }
-
-  /* Change the background color on mouse-over */
-  .centerbuttons a:hover {
-    background-color: orange;
-    box-shadow: 3px 2px;
-    color: rgb(90, 55, 8);
-}
-    
- /*next set of buttons ***new, in-focus, resources*** styling 
-  input[type=url], input[type=url], input[type=url] {
+ /*next set of buttons ***new, in-focus, resources*** styling */
+  input[type=button], input[type=submit], input[type=reset] {
     background-color: whitesmoke;
     border: 1px;
     color: black;
@@ -182,56 +151,65 @@ body {
     margin: 10px 2px 15px 10px;
     cursor: pointer;
     width: 150px;
-  }*/
+  }
   /*new section -- search bar ! */
 
     /* Style the search box form field */
-     
-   
-    
+    .container {
+      border-radius: 5px;
+      display: flex; 
+      align-items: center; 
+      justify-content: center;       
+      }
+      
           /* Style the search box form field */
     .container {
       border-radius: 5px;
       display: flex; 
       align-items: center; 
       justify-content: center; 
+      
       }
       
       form {
+      background: #fff;
       border-radius: 5px;
       width: 50%;
       height: 55px;
       display: flex;
-      border: 1px solid #8d8f91;
+
       }
       
       form input {
       flex: 1;
-      outline: 0;
+      border: none;
+      outline: none;
       border-radius: 5px;
       padding: 5px;
-      border: 3px solid #8d8f91;
       }
-      input:focus {
-        background-color: lightsalmon;
-    }
-    
-    select:focus {
-        background-color: ivory;
-    }
       
       form button {
       background: tomato; 
-      padding: 7px 20px;
+      padding: 10px 30px;
+      border: 0;
       border-radius: 0px 5px 5px 0px;
       outline: none;
       color: #fff;
       letter-spacing: 1px;
-      font-size: 15px;
+      font-size: 20px;
       cursor: pointer;
-      border: 3px solid #8d8f91;
       
       }
+      
+      
+      form .fa-magnifying-glass {
+  
+      align-self: center;
+      padding: 10px 20px;
+      color: #777;
+      
+      }
+      
     
 
 /* Style the search field */
@@ -240,7 +218,8 @@ body {
 .boxcontainer {
     width: 10;
     height: auto;
-    background-color: #3a3c3d;
+    background-color: #567895;
+    
 
 /*flexbox styling */
   
@@ -261,7 +240,6 @@ font-size: 18px;
 text-align: center;
 color: black;
 border-radius: 5px;
-border: 3px solid #8d8f91;
 }
 /*
 .nobulletlist {
