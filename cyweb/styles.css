@@ -167,7 +167,7 @@ body {
 
   /* Change the background color on mouse-over */
   .centerbuttons a:hover {
-    background-color: orange;
+    background-color: rgb(211, 204, 191);
     box-shadow: 3px 2px;
     color: rgb(90, 55, 8);
 }
@@ -195,6 +195,7 @@ body {
       display: flex; 
       align-items: center; 
       justify-content: center; 
+      
       }
       
       form {
@@ -203,21 +204,23 @@ body {
       height: 55px;
       display: flex;
       border: 1px solid #8d8f91;
+      
       }
       
       form input {
       flex: 1;
-      outline: 0;
+      outline: 2;
       border-radius: 5px;
       padding: 5px;
       border: 3px solid #8d8f91;
       }
       input:focus {
-        background-color: lightsalmon;
+        background-color: rgb(238, 230, 227);
     }
     
     select:focus {
-        background-color: ivory;
+        background-color: lightgray;
+        
     }
       
       form button {
@@ -230,7 +233,7 @@ body {
       font-size: 15px;
       cursor: pointer;
       border: 3px solid #8d8f91;
-      
+     
       }
     
 
